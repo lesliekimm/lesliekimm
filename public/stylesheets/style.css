@@ -112,7 +112,8 @@ a.btn-resume {
   width: 100%;
   text-decoration: none;
   margin-top: 15px;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  border-radius: 10px; }
   a.btn-resume:hover {
     color: white; }
 
