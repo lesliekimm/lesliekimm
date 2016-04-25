@@ -1,4 +1,25 @@
 extends layout
 
 block content
-  | portfolio
+  .container
+    h2.text-center portfolios
+    .row
+      .col-sm-6
+        .card.large.rounded-corners
+          a(href='/')
+            .card-image.waves-effect.waves-block.waves-light.img-rounded-corners
+              img.activator(src='images/software_portfolio.jpg')
+            .card-content
+              h5.card-title.activator.accent-color software development portfolio
+              | current project
+              br
+              | connectall: a web tool for the obama administration's connect all initiative to provide all americans the necessary skills to help close the digital divide
+      .col-sm-6
+        .card.large.rounded-corners
+          a(href='/')
+            .card-image.waves-effect.waves-block.waves-light.img-rounded-corners
+              img.activator(src='images/art_portfolio.jpg')
+            .card-content
+              h5.card-title.activator.accent-color art portfolio
+              | paintings, multi-media, drawings, crafts and more
+            

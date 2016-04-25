@@ -43,6 +43,7 @@ h6 {
 
 body, p {
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  background-color: #eceff1;
   color: #263238; }
 
 a {
@@ -56,8 +57,6 @@ a:hover {
 
 .upper {
   text-transform: uppercase; }
-  .upper.resume-padding {
-    padding-top: 17.1px; }
 
 /* navbar */
 a.brand-logo {
@@ -97,19 +96,45 @@ a.main-page-links:hover {
   color: #90a4ae; }
 
 /* resume page */
+.card-resume {
+  padding: 25px;
+  border-radius: 10px; }
+
 .accent-color {
   color: #26a69a; }
 
-p.resume {
-  margin: 0; }
+p {
+  background-color: white; }
+  p.resume {
+    margin: 0; }
 
 a.btn-resume {
   width: 100%;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 25px; }
   a.btn-resume:hover {
     color: white; }
 
 .resume-padding {
   padding-top: 17.1px; }
+
+/* portfolio page */
+.rounded-corners {
+  border-radius: 10px; }
+
+.img-rounded-corners {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+
+.card.large {
+  height: 450px; }
+  .card.large:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.portfolio-description {
+  color: #263238; }
+  .portfolio-description:hover {
+    color: #263238; }
 
 /*# sourceMappingURL=style.css.map */

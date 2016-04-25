@@ -3,134 +3,135 @@ extends layout
 block content
   .container
     h2.text-center resume
-    .row
-      .col-sm-12.text-center
-        h3.accent-color leslie kimm
-        h4.accent-color web developer, software developer
-    hr
-    .row
-      .col-sm-2.text-right.upper contact
-      .col-sm-9
-        | leslie@lesliekimm.com
-        br
-        a(href='http://www.lesliekimm.com/', target='_blank') lesliekimm.com
-    .row
-      .col-sm-2.text-right.upper location
-      .col-sm-9 san francisco
-    .row
-      .col-sm-2.text-right.upper profiles
-      .col-sm-3
-        | github (@#[a(href='https://github.com/lesliekimm', target='_blank') lesliekimm])
-      .col-sm-3
-        | linkedin (@#[a(href='https://www.linkedin.com/in/lesliekimm', target='_blank') lesliekimm])
-      .col-sm-4
-        | instagram (@#[a(href='https://www.instagram.com/lesliekimmakes/', target='_blank') lesliekimmakes])
-    hr
-    .row
-      .col-sm-2.text-right.upper
-        .resume-padding projects
-      .col-sm-10
-        h4.accent-color ui lead/engineer for connectall initialize #[small #[em (rails, html, css, javascript)]]
-          .small.date mar '16 - present
-        p in collaboration with the white house, a web tool for the obama administration's connect all initiative to provide all americans the necessary skills to help close the digital divide
-        h6 #[a(href='https://github.com/cmaher92/connectall', target='_blank') github repo]
+    .card.card-resume
+      .row
+        .col-sm-12.text-center
+          h3.accent-color leslie kimm
+          h4.accent-color web developer, software developer
+      hr
+      .row
+        .col-sm-2.text-right.upper contact
+        .col-sm-9
+          | leslie@lesliekimm.com
+          br
+          a(href='http://www.lesliekimm.com/', target='_blank') lesliekimm.com
+      .row
+        .col-sm-2.text-right.upper location
+        .col-sm-9 san francisco
+      .row
+        .col-sm-2.text-right.upper profiles
+        .col-sm-3
+          | github (@#[a(href='https://github.com/lesliekimm', target='_blank') lesliekimm])
+        .col-sm-3
+          | linkedin (@#[a(href='https://www.linkedin.com/in/lesliekimm', target='_blank') lesliekimm])
+        .col-sm-4
+          | instagram (@#[a(href='https://www.instagram.com/lesliekimmakes/', target='_blank') lesliekimmakes])
+      hr
+      .row
+        .col-sm-2.text-right.upper
+          .resume-padding projects
+        .col-sm-10
+          h4.accent-color ui lead/engineer for connectall initialize #[small #[em (rails, html, css, javascript)]]
+            .small.date mar '16 - present
+          p in collaboration with the white house, a web tool for the obama administration's connect all initiative to provide all americans the necessary skills to help close the digital divide
+          h6 #[a(href='https://github.com/cmaher92/connectall', target='_blank') github repo]
 
-        h4.accent-color courseboard #[small #[em (mean, javascript)]]
-          .small.date feb '16 - present
-        p a web app for organizations to allow users to create and enroll in courses, post assignments and announcments to the course page
-        h6 #[a(href='https://github.com/ajbraus/courseboard', target='_blank') github repo]
+          h4.accent-color courseboard #[small #[em (mean, javascript)]]
+            .small.date feb '16 - present
+          p a web app for organizations to allow users to create and enroll in courses, post assignments and announcments to the course page
+          h6 #[a(href='https://github.com/ajbraus/courseboard', target='_blank') github repo]
 
-        h4.accent-color portfolio website #[small #[em (node, express, jade, bootstrap, materialize, sass)]]
-          .small.date jan '16 - present
-        p.resume a work-in-progress website built from scratch to display both software and art portfolios
-        p building to further develop web dev skills and have more controll than currently used wordpress
-        h6 #[a(href='http://lesliekimm.github.io/index.html', target='_blank') lesliekimm.github.io]
+          h4.accent-color portfolio website #[small #[em (node, express, jade, bootstrap, materialize, sass)]]
+            .small.date jan '16 - present
+          p.resume a work-in-progress website built from scratch to display both software and art portfolios
+          p building to further develop web dev skills and have more controll than currently used wordpress
+          h6 #[a(href='http://lesliekimm.github.io/index.html', target='_blank') lesliekimm.github.io]
 
-        h4.accent-color talent tracker v1.1 #[small #[em (swift, realm)]]
-          .small.date oct '15 - mar '16
-        p ios mobile app that helps talent bookers keep track of confirmed talent for events
-        h6 #[a(href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1084872902&mt=8', target='_blank') download in the app store]
+          h4.accent-color talent tracker v1.1 #[small #[em (swift, realm)]]
+            .small.date oct '15 - mar '16
+          p ios mobile app that helps talent bookers keep track of confirmed talent for events
+          h6 #[a(href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1084872902&mt=8', target='_blank') download in the app store]
 
-        h4.accent-color boolean forest #[small #[em (java)]]
-          .small.date apr '15 - may '15
-        p interactive java applet used as teaching tool to teach children the basics of boolean logic
-    hr  
-    .row
-      .col-sm-2.text-right.upper
-        .resume-padding experience
-      .col-sm-10
-        h4.accent-color engineering intern at social tables #[small #[em (react, javascript)]]
-          .small.date jun '15 - aug '15 | washington, d.c.
-        p used existing api to revamp internal customer service tool
-        h6 #[a(href='https://www.socialtables.com/', target='_blank') socialtables.com]
-          
-        h4.accent-color vp, digital media operations at laugh factory #[small #[em (html, css, php)]]
-          .small.date oct '10 - may '12 | los angeles, ca
-        p.resume managed online content: website, social media, videos, press releases
-        p.resume managed digital media partnerships: googletv, intel, rayv tv, youtube
-        p.resume debugged and fixed ~100 bugs for website and managed outsourced web programmers
-        p redesigned newsletter and content to increase click-through rate to website by ~70%
-        h6 #[a(href='http://www.laughfactory.com/', target='_blank') laughfactory.com]
-    hr
-    .row
-      .col-sm-2.text-right.upper
-        .resume-padding volunteer
-      .col-sm-10
-        h4.accent-color instructor for girls who code #[small #[em (st. ignatius prep school)]]
-          .small.date jan '16 - present | san francisco, ca
-        p.resume mentoring 4 groups of girls for technovation 2016: girls are building apps using mit's appinventor that solve problems in their community to compete to pitch their app at the world pitch for $10,000 to implement their apps
-        p use codesters curriculum to teach girls to program (python)
-        h6 #[a(href='http://girlswhocode.com/', target='_blank') girlswhocode.com]
-    hr
-    .row
-      .col-sm-2.text-right.upper
-        .resume-padding education
-      .col-sm-10
-        h4.accent-color make school #[small #[em (product university)]]
-          .small.date sep '15 - present | san francisco, ca
-        p units: ios dev, web dev, computer science foundations
+          h4.accent-color boolean forest #[small #[em (java)]]
+            .small.date apr '15 - may '15
+          p interactive java applet used as teaching tool to teach children the basics of boolean logic
+      hr  
+      .row
+        .col-sm-2.text-right.upper
+          .resume-padding experience
+        .col-sm-10
+          h4.accent-color engineering intern at social tables #[small #[em (react, javascript)]]
+            .small.date jun '15 - aug '15 | washington, d.c.
+          p used existing api to revamp internal customer service tool
+          h6 #[a(href='https://www.socialtables.com/', target='_blank') socialtables.com]
+            
+          h4.accent-color vp, digital media operations at laugh factory #[small #[em (html, css, php)]]
+            .small.date oct '10 - may '12 | los angeles, ca
+          p.resume managed online content: website, social media, videos, press releases
+          p.resume managed digital media partnerships: googletv, intel, rayv tv, youtube
+          p.resume debugged and fixed ~100 bugs for website and managed outsourced web programmers
+          p redesigned newsletter and content to increase click-through rate to website by ~70%
+          h6 #[a(href='http://www.laughfactory.com/', target='_blank') laughfactory.com]
+      hr
+      .row
+        .col-sm-2.text-right.upper
+          .resume-padding volunteer
+        .col-sm-10
+          h4.accent-color instructor for girls who code #[small #[em (st. ignatius prep school)]]
+            .small.date jan '16 - present | san francisco, ca
+          p.resume mentoring 4 groups of girls for technovation 2016: girls are building apps using mit's appinventor that solve problems in their community to compete to pitch their app at the world pitch for $10,000 to implement their apps
+          p use codesters curriculum to teach girls to program (python)
+          h6 #[a(href='http://girlswhocode.com/', target='_blank') girlswhocode.com]
+      hr
+      .row
+        .col-sm-2.text-right.upper
+          .resume-padding education
+        .col-sm-10
+          h4.accent-color make school #[small #[em (product university)]]
+            .small.date sep '15 - present | san francisco, ca
+          p units: ios dev, web dev, computer science foundations
 
-        h4.accent-color georgetown university #[small #[em (post baccalaureate certificate: 3.67gpa)]]
-          .small.date jan '14 - may '15 | washington, d.c.
-        p classes: advanced programming, data structures, network securities
+          h4.accent-color georgetown university #[small #[em (post baccalaureate certificate: 3.67gpa)]]
+            .small.date jan '14 - may '15 | washington, d.c.
+          p classes: advanced programming, data structures, network securities
 
-        h4.accent-color nyu: leonard stern school of business #[small #[em (b.s. marketing, studio art, film: 3.5gpa)]]
-          .small.date sep '07 - may '10 | new york, ny
-    hr
-    .row
-      .col-sm-2.text-right.upper skills
-      .col-sm-2
-        p.resume software dev
-        p.resume software dev tools
-        p design tools
-      .col-sm-8
-        p.resume python, rails, ruby, mean, javascript, swift, realm, jade, bootstrap, materialize, html, css, c++, java, react
-        p.resume git, github, xcode, eclipse, android studio
-        p balsamiq, sketch, photoshop, indesign, illustrator
-    hr
-    .row
-      .col-sm-2.text-right.upper languages
-      .col-sm-2
-        p.resume english
-        p.resume korean
-        p spanish
-      .col-sm-8
-        p.resume native speaker
-        p.resume conversational
-        p beginner
-    hr
-    .row
-      .col-sm-2.text-right.upper interests
-      .col-sm-2
-        p.resume painting | fine arts
-        p.resume fitness | health
-        p.resume education
-        p volunteering
-      .col-sm-8
-        p.resume acrylics, oil, watercolor, multimedia (donation & commission based)
-        p.resume lagree method, running, yoga, tennis, hiking
-        p.resume girls who code, art instructor (ages 3 - 30), stem & sats private instructor
-        p girls who code, st. anthony's foundation, animal rescue organizations
+          h4.accent-color nyu: leonard stern school of business #[small #[em (b.s. marketing, studio art, film: 3.5gpa)]]
+            .small.date sep '07 - may '10 | new york, ny
+      hr
+      .row
+        .col-sm-2.text-right.upper skills
+        .col-sm-2
+          p.resume software dev
+          p.resume software dev tools
+          p design tools
+        .col-sm-8
+          p.resume python, rails, ruby, mean, javascript, swift, realm, jade, bootstrap, materialize, html, css, c++, java, react
+          p.resume git, github, xcode, eclipse, android studio
+          p balsamiq, sketch, photoshop, indesign, illustrator
+      hr
+      .row
+        .col-sm-2.text-right.upper languages
+        .col-sm-2
+          p.resume english
+          p.resume korean
+          p spanish
+        .col-sm-8
+          p.resume native speaker
+          p.resume conversational
+          p beginner
+      hr
+      .row
+        .col-sm-2.text-right.upper interests
+        .col-sm-2
+          p.resume painting | fine arts
+          p.resume fitness | health
+          p.resume education
+          p volunteering
+        .col-sm-8
+          p.resume acrylics, oil, watercolor, multimedia (donation & commission based)
+          p.resume lagree method, running, yoga, tennis, hiking
+          p.resume girls who code, art instructor (ages 3 - 30), stem & sats private instructor
+          p girls who code, st. anthony's foundation, animal rescue organizations
     .row.text-center
-      .col-sm-offset-1.col-sm-10
+      .col-sm-12
         a.btn-large.wave-effect.waves-light.btn-resume(href='http://lesliekimm.github.io/KimLeslieResume.pdf', target='_blank') download my resume
