@@ -51,6 +51,9 @@ a {
   color: #607d8b;
   text-decoration: none; }
 
+a:active, a:visited {
+  text-decoration: none; }
+
 a:hover {
   color: #90a4ae;
   text-decoration: none; }
@@ -68,6 +71,9 @@ a.navbar-link {
   text-transform: uppercase; }
   a.navbar-link:hover {
     color: #90a4ae; }
+
+.right {
+  margin-right: 25px; }
 
 /* index page */
 .main {
@@ -137,5 +143,15 @@ a.btn-resume {
   color: #263238; }
   .portfolio-description:hover {
     color: #263238; }
+
+/* about page */
+.large-image-size {
+  width: 400px;
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+.card-about {
+  margin-bottom: 35px; }
 
 /*# sourceMappingURL=style.css.map */
