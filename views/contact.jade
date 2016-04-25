@@ -1,4 +1,22 @@
 extends layout
 
 block content
-  | contact
+    .container
+      h2.text-center contact leslie kimm
+      .card.card-resume.card-about
+        .row
+          form
+            .row
+              input-field.col-sm-12
+                label(for='email') email
+                input.validate#email(type='email', placeholder='enter your email address', required='', name='_replyto')
+            .row
+              input-field.col-sm-12
+                label(for='user-feedback') send me a message
+                textarea.materialize-text-area#user-feedback(rows='10', cols='20', placeholder='contact me with any questions, comments or concerns!', required='')
+            .row
+              .col-sm-12
+                button.btn-large.wave-effect.waves-light.btn-contact(type='submit') send message
+            //- input(type='hidden', name='_subject', value="Email from Leslie Kimm's Portfolio!")
+            //- input(type='text', name='_gotcha', style='display:none')
+            //- button.button(type='submit') Send

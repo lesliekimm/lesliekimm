@@ -78,16 +78,16 @@ a.navbar-link {
 /* index page */
 .main {
   background-image: url("/images/bg.jpg");
+  position: fixed;
+  width: 100%;
+  top: 0;
   height: 788px;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: fixed;
-  width: 100%;
-  top: 0; }
+  background-attachment: fixed; }
 
 .layer {
   background-color: rgba(255, 255, 255, 0.3);
@@ -155,6 +155,17 @@ a.btn-resume {
   margin-bottom: 20px; }
 
 .card-about {
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  padding-bottom: 0px; }
+
+/* contact page */
+.btn-contact {
+  width: 100%;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  border-radius: 10px; }
+  .btn-contact:hover {
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */
