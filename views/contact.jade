@@ -5,18 +5,13 @@ block content
       h2.text-center contact leslie kimm
       .card.card-resume.card-about
         .row
-          form
+          .col-sm-12.container-fluid
+            img.pull-left.rounded-corners.large-image-size(src='images/leslie_and_thumper.jpg')
             .row
-              input-field.col-sm-12
-                label(for='email') email
-                input.validate#email(type='email', placeholder='enter your email address', required='', name='_replyto')
-            .row
-              input-field.col-sm-12
-                label(for='user-feedback') send me a message
-                textarea.materialize-text-area#user-feedback(rows='10', cols='20', placeholder='contact me with any questions, comments or concerns!', required='')
-            .row
-              .col-sm-12
-                button.btn-large.wave-effect.waves-light.btn-contact(type='submit') send message
-            //- input(type='hidden', name='_subject', value="Email from Leslie Kimm's Portfolio!")
-            //- input(type='text', name='_gotcha', style='display:none')
-            //- button.button(type='submit') Send
+              a(href='https://www.linkedin.com/in/lesliekimm', target='_blank')#[img.social-media-images(src='images/linkedin.png')] 
+              a(href='https://www.facebook.com/lesliekimmartist/', target='_blank')#[img.social-media-images(src='images/facebook.png')] 
+              a(href='https://twitter.com/lesliekimm', target='_blank')#[img.social-media-images(src='images/twitter.png')] 
+              a(href='https://www.instagram.com/lesliekimmakes/', target='_blank')#[img.social-media-images(src='images/instagram.png')]
+              br
+              br
+              p if you have any feedback, suggestions or concerns, feel free to reach me at leslie@lesliekimm.com
