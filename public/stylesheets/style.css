@@ -25,8 +25,8 @@ h4 {
   font-weight: 700;
   font-size: 17px;
   line-height: 1.3em/22px; }
-  h4 .small.date {
-    margin-top: 3px; }
+  h4 .small.date, h4 .project-link {
+    margin-top: 7px; }
 
 h5 {
   font-family: "Merriweather", serif;
@@ -167,5 +167,8 @@ a.btn-resume {
   border-radius: 10px; }
   .btn-contact:hover {
     color: white; }
+
+.social-media-images {
+  width: 30px; }
 
 /*# sourceMappingURL=style.css.map */

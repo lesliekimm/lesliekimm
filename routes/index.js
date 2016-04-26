@@ -16,6 +16,16 @@ router.get('/portfolio', function(req, res, next) {
   res.render('portfolio', { title: '| portfolio |' });
 });
 
+/* GET software portfolio page. */
+router.get('/software', function(req, res, next) {
+  res.render('software', { title: '| software |' });
+});
+
+/* GET art portfolio page. */
+router.get('/art', function(req, res, next) {
+  res.render('art', { title: '| art |' });
+});
+
 /* GET about page. */
 router.get('/about', function(req, res, next) {
   res.render('about', { title: '| about |' });
