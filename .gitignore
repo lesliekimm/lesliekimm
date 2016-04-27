@@ -10,3 +10,5 @@ node_modules/*
 public/vendor
 
 .env
+
+.DS_Store
