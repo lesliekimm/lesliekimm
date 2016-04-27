@@ -1,3 +1,9 @@
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
+if (process.env.NODE_ENV == 'development') {
+  require('dotenv').load();
+}
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -9,6 +15,8 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+var config = require('./config')
+, server = app.listen(config.port)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -62,7 +70,15 @@ app.use(function(err, req, res, next) {
   });
 });
 
-module.exports = app;
-app.listen(80, function() {
-  console.log("Server running at http://localhost:3000");
-});
+if (process.env.NODE_ENV === 'production') {
+  app.locals.baseUrl = 'https://lesliekimm.herokuapp.com'
+} else if (process.env.NODE_ENV === 'development') {
+  app.locals.baseUrl = 'http://localhost:3000'
+}
+
+module.exports = server;
+
+// module.exports = app;
+// app.listen(80, function() {
+//   console.log("Server running at http://localhost:3000");
+// });
