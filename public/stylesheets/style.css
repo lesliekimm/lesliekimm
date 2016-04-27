@@ -19,6 +19,8 @@ h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.3em/26px; }
+  h3.portfolio {
+    margin-top: -3px; }
 
 h4 {
   font-family: "Merriweather", serif;
@@ -72,7 +74,7 @@ a.navbar-link {
   a.navbar-link:hover {
     color: #90a4ae; }
 
-.right {
+ul.right {
   margin-right: 25px; }
 
 /* index page */
@@ -146,6 +148,12 @@ a.btn-resume {
   color: #263238; }
   .portfolio-description:hover {
     color: #263238; }
+
+.small-image-size {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 20px; }
 
 /* about page */
 .large-image-size {
