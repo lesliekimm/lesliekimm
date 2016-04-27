@@ -63,6 +63,6 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-app.listen(3000, function() {
+app.listen(80, function() {
   console.log("Server running at http://localhost:3000");
 });
