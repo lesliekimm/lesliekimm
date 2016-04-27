@@ -42,6 +42,10 @@ h6 {
   font-size: 13px;
   line-height: 1.3em/17px;
   text-transform: uppercase; }
+  h6.portfolio {
+    margin-top: -10px; }
+  h6.portfolio-smaller {
+    margin-top: -5px; }
 
 body, p {
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
