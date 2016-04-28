@@ -1,4 +1,33 @@
 extends ../../layout
 
 block content
-  | design work 
+  link(rel='stylesheet', type='text/css', media='all', href='../../vendor/jgallery/dist/css/font-awesome.min.css')
+  link(rel='stylesheet', type='text/css', media='all', href='../../vendor/jgallery/dist/css/jgallery.min.css?v=1.5.5')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/jquery-2.0.3.min.js')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/jgallery.min.js?v=1.5.5')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/touchswipe.min.js')
+  .container
+    h2.text-center design work
+    .card
+      .row
+        #gallery
+          a(href='../../images/art/design_work/2d_lines.jpg')
+            img(src='../../images/art/design_work/2d_lines.jpg', alt='2d lines')
+          a(href='../../images/art/design_work/jack_and_jill.jpg')
+            img(src='../../images/art/design_work/jack_and_jill.jpg', alt='jack and jill')
+          a(href='../../images/art/design_work/pieces.jpg')
+            img(src='../../images/art/design_work/pieces.jpg', alt='pieces')
+          a(href='../../images/art/design_work/color_theory.jpg')
+            img(src='../../images/art/design_work/color_theory.jpg', alt='color theory')
+          a(href='../../images/art/design_work/watercolor_design.jpg')
+            img(src='../../images/art/design_work/watercolor_design.jpg', alt='watercolor design')
+          a(href='../../images/art/design_work/zoom_project.jpg')
+            img(src='../../images/art/design_work/zoom_project.jpg', alt='zoom project')
+          a(href='../../images/art/design_work/skeleton.jpg')
+            img(src='../../images/art/design_work/skeleton.jpg', alt='skeleton')
+        script(type='text/javascript').
+          $( function() {
+          $( '#gallery' ).jGallery();
+          } );
+
+

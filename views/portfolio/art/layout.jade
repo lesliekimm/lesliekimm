@@ -1,4 +1,29 @@
 extends ../../layout
 
 block content
-  | layouts 
+  link(rel='stylesheet', type='text/css', media='all', href='../../vendor/jgallery/dist/css/font-awesome.min.css')
+  link(rel='stylesheet', type='text/css', media='all', href='../../vendor/jgallery/dist/css/jgallery.min.css?v=1.5.5')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/jquery-2.0.3.min.js')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/jgallery.min.js?v=1.5.5')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/touchswipe.min.js')
+  .container
+    h2.text-center layout
+    .card
+      .row
+        #gallery
+          a(href='../../images/art/layout/budapest.jpg')
+            img(src='../../images/art/layout/budapest.jpg', alt='budapest')
+          a(href='../../images/art/layout/buenos_aires.jpg')
+            img(src='../../images/art/layout/buenos_aires.jpg', alt='buenos aires')
+          a(href='../../images/art/layout/core_curriculum.jpg')
+            img(src='../../images/art/layout/core_curriculum.jpg', alt='core curriculum')
+          a(href='../../images/art/layout/weekends_and_parties.jpg')
+            img(src='../../images/art/layout/weekends_and_parties.jpg', alt='weekends and parties')
+          a(href='../../images/art/layout/classes_outside_stern.jpg')
+            img(src='../../images/art/layout/classes_outside_stern.jpg', alt='classes outside stern')
+        script(type='text/javascript').
+          $( function() {
+          $( '#gallery' ).jGallery();
+          } );
+
+

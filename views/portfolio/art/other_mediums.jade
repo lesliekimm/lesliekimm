@@ -1,4 +1,37 @@
 extends ../../layout
 
 block content
-  | other mediums 
+  link(rel='stylesheet', type='text/css', media='all', href='../../vendor/jgallery/dist/css/font-awesome.min.css')
+  link(rel='stylesheet', type='text/css', media='all', href='../../vendor/jgallery/dist/css/jgallery.min.css?v=1.5.5')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/jquery-2.0.3.min.js')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/jgallery.min.js?v=1.5.5')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/touchswipe.min.js')
+  .container
+    h2.text-center other mediums
+    .card
+      .row
+        #gallery
+          a(href='../../images/art/other_mediums/color_theory_drapes.jpg')
+            img(src='../../images/art/other_mediums/color_theory_drapes.jpg', alt='drapes')
+          a(href='../../images/art/other_mediums/music.jpg')
+            img(src='../../images/art/other_mediums/music.jpg', alt='music')
+          a(href='../../images/art/other_mediums/paper_bag.jpg')
+            img(src='../../images/art/other_mediums/paper_bag.jpg', alt='paper bag')
+          a(href='../../images/art/other_mediums/back_study.jpg')
+            img(src='../../images/art/other_mediums/back_study.jpg', alt='back study')
+          a(href='../../images/art/other_mediums/life_drawing_quick_study.jpg')
+            img(src='../../images/art/other_mediums/life_drawing_quick_study.jpg', alt='life drawing quick study')
+          a(href='../../images/art/other_mediums/multi_media_collage.jpg')
+            img(src='../../images/art/other_mediums/multi_media_collage.jpg', alt='multi media collage')
+          a(href='../../images/art/other_mediums/accessories.jpg')
+            img(src='../../images/art/other_mediums/accessories.jpg', alt='accessories')
+          a(href='../../images/art/other_mediums/kristen_kreuk.jpg')
+            img(src='../../images/art/other_mediums/kristen_kreuk.jpg', alt='kristen_kreuk')
+          a(href='../../images/art/other_mediums/life_drawing.jpg')
+            img(src='../../images/art/other_mediums/life_drawing.jpg', alt='life drawing')
+        script(type='text/javascript').
+          $( function() {
+          $( '#gallery' ).jGallery();
+          } );
+
+

@@ -1,4 +1,27 @@
 extends ../../layout
 
 block content
-  | photography 
+  link(rel='stylesheet', type='text/css', media='all', href='../../vendor/jgallery/dist/css/font-awesome.min.css')
+  link(rel='stylesheet', type='text/css', media='all', href='../../vendor/jgallery/dist/css/jgallery.min.css?v=1.5.5')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/jquery-2.0.3.min.js')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/jgallery.min.js?v=1.5.5')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/touchswipe.min.js')
+  .container
+    h2.text-center photography
+    .card
+      .row
+        #gallery
+          a(href='../../images/art/photography/attention.jpg')
+            img(src='../../images/art/photography/attention.jpg', alt='attention')
+          a(href='../../images/art/photography/self_portrait.jpg')
+            img(src='../../images/art/photography/self_portrait.jpg', alt='self portrait')
+          a(href='../../images/art/photography/little_boy.jpg')
+            img(src='../../images/art/photography/little_boy.jpg', alt='little boy')
+          a(href='../../images/art/photography/koco.jpg')
+            img(src='../../images/art/photography/koco.jpg', alt='koco')
+        script(type='text/javascript').
+          $( function() {
+          $( '#gallery' ).jGallery();
+          } );
+
+

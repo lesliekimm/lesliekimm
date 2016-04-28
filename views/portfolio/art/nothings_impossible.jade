@@ -1,4 +1,41 @@
 extends ../../layout
 
 block content
-  | nothing's impossible 
+  link(rel='stylesheet', type='text/css', media='all', href='../../vendor/jgallery/dist/css/font-awesome.min.css')
+  link(rel='stylesheet', type='text/css', media='all', href='../../vendor/jgallery/dist/css/jgallery.min.css?v=1.5.5')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/jquery-2.0.3.min.js')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/jgallery.min.js?v=1.5.5')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/touchswipe.min.js')
+  .container
+    h2.text-center nothing's impossible series
+    .card
+      .row
+        #gallery
+          a(href='../../images/art/nothings_impossible/nothings_impossible.jpg')
+            img(src='../../images/art/nothings_impossible/nothings_impossible.jpg', alt="nothing's impossible")
+          a(href='../../images/art/nothings_impossible/part1.jpg')
+            img(src='../../images/art/nothings_impossible/part1.jpg', alt='part 1')
+          a(href='../../images/art/nothings_impossible/part2.jpg')
+            img(src='../../images/art/nothings_impossible/part2.jpg', alt='part 2')
+          a(href='../../images/art/nothings_impossible/part3.jpg')
+            img(src='../../images/art/nothings_impossible/part3.jpg', alt='part 3')
+          a(href='../../images/art/nothings_impossible/part4.jpg')
+            img(src='../../images/art/nothings_impossible/part4.jpg', alt='part 4')
+          a(href='../../images/art/nothings_impossible/part5.jpg')
+            img(src='../../images/art/nothings_impossible/part5.jpg', alt='part 5')
+          a(href='../../images/art/nothings_impossible/part6.jpg')
+            img(src='../../images/art/nothings_impossible/part6.jpg', alt='part 6')
+          a(href='../../images/art/nothings_impossible/part7.jpg')
+            img(src='../../images/art/nothings_impossible/part7.jpg', alt='part 7')
+          a(href='../../images/art/nothings_impossible/part8.jpg')
+            img(src='../../images/art/nothings_impossible/part8.jpg', alt='part 8')
+          a(href='../../images/art/nothings_impossible/part9.jpg')
+            img(src='../../images/art/nothings_impossible/part9.jpg', alt='part 9')
+          a(href='../../images/art/nothings_impossible/part10.jpg')
+            img(src='../../images/art/nothings_impossible/part10.jpg', alt='part 10')
+        script(type='text/javascript').
+          $( function() {
+          $( '#gallery' ).jGallery();
+          } );
+
+

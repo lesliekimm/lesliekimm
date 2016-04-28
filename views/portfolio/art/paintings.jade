@@ -1,4 +1,37 @@
 extends ../../layout
 
 block content
-  | paintings 
+  link(rel='stylesheet', type='text/css', media='all', href='../../vendor/jgallery/dist/css/font-awesome.min.css')
+  link(rel='stylesheet', type='text/css', media='all', href='../../vendor/jgallery/dist/css/jgallery.min.css?v=1.5.5')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/jquery-2.0.3.min.js')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/jgallery.min.js?v=1.5.5')
+  script(type='text/javascript', src='../../vendor/jgallery/dist/js/touchswipe.min.js')
+  .container
+    h2.text-center paintings
+    .card
+      .row
+        #gallery
+          a(href='../../images/art/paintings/gypsy.jpg')
+            img(src='../../images/art/paintings/gypsy.jpg', alt='gypsy')
+          a(href='../../images/art/paintings/patio_flowers.jpg')
+            img(src='../../images/art/paintings/patio_flowers.jpg', alt='patio flowers')
+          a(href='../../images/art/paintings/colors.jpg')
+            img(src='../../images/art/paintings/colors.jpg', alt='colors')
+          a(href='../../images/art/paintings/model.jpg')
+            img(src='../../images/art/paintings/model.jpg', alt='model')
+          a(href='../../images/art/paintings/seven_sins.jpg')
+            img(src='../../images/art/paintings/seven_sins.jpg', alt='seven sins')
+          a(href='../../images/art/paintings/silhouette.jpg')
+            img(src='../../images/art/paintings/silhouette.jpg', alt='silhouette')
+          a(href='../../images/art/paintings/boots.jpg')
+            img(src='../../images/art/paintings/boots.jpg', alt='boots')
+          a(href='../../images/art/paintings/tennis.jpg')
+            img(src='../../images/art/paintings/tennis.jpg', alt='tennis')
+          a(href='../../images/art/paintings/neighborhood.jpg')
+            img(src='../../images/art/paintings/neighborhood.jpg', alt='neighborhood')
+        script(type='text/javascript').
+          $( function() {
+          $( '#gallery' ).jGallery();
+          } );
+
+
