@@ -1,18 +1,3 @@
-.container-main {
-  background: url("/images/bg.jpg");
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: black;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
-
 h1 {
   font-family: "Merriweather", serif;
   font-weight: 700;

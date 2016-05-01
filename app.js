@@ -16,7 +16,7 @@ var users = require('./routes/users');
 
 var app = express();
 var config = require('./config')
-, server = app.listen(config.port)
+, server = app.listen(config.port);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

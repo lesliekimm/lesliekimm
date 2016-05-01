@@ -6,10 +6,6 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/index2', function(req, res, next) {
-  res.render('index2');
-})
-
 /* GET resume page. */
 router.get('/resume', function(req, res, next) {
   res.render('resume', { title: '| resume |' });
@@ -76,5 +72,11 @@ router.get('/portfolio/art/photography', function(req, res, next) {
 router.get('/portfolio/art/crafts', function(req, res, next) {
   res.render('portfolio/art/crafts', { title: '| crafts |' });
 });
+
+
+/* GET color pallate. */
+router.get('/color-pallate', function(req, res, next) {
+  res.render('color-pallate');
+})
 
 module.exports = router;
