@@ -1,25 +1,25 @@
 extends layout
 
 block content
-  .container
-    h2.text-center portfolios
-    .row
-      .col-sm-6
-        .card.large.rounded-corners
-          a(href='/portfolio/software')
-            .card-image.waves-effect.waves-block.waves-light.img-rounded-corners
-              img.activator(src='images/software_portfolio.jpg')
-            .card-content
-              h5.card-title.activator.accent-color software development portfolio
-              | current project
-              br
-              | connectall: a web tool for the obama administration's connectall initiative to provide all americans the necessary skills to help close the digital divide
-      .col-sm-6
-        .card.large.rounded-corners
-          a(href='/portfolio/art')
-            .card-image.waves-effect.waves-block.waves-light.img-rounded-corners
-              img.activator(src='images/art_portfolio.jpg')
-            .card-content
-              h5.card-title.activator.accent-color art portfolio
-              | paintings, multi-media, drawings, crafts and more
-            
+  .row
+    .col-sm-6.text-center
+      include ./includes/header.jade
+      .col-sm-12
+        .content
+          h2.text-center
+            .title portfolios
+          .row
+            .col-sm-offset-1.col-sm-10
+              a(href='/portfolio/software')
+                .card
+                  .software
+                    h1
+                      .portfolio-title software
+          .row
+            .col-sm-offset-1.col-sm-10
+              a(href='/portfolio/art')
+                .card
+                  .art
+                    h1
+                      .portfolio-title artwork
+    .col-sm-6.right

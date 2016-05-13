@@ -35,6 +35,13 @@ h1 .logo {
   font-size: 2.5em;
 }
 
+h1 .portfolio-title {
+  margin-top: 95px;
+  margin-bottom: 25px;
+  font-size: 2em;
+  color: #E97B59;
+}
+
 h2 .title {
   color: #E97B59;
   margin-top: -30px;
@@ -81,6 +88,48 @@ a:hover .home {
   top: 20px;
   height: 600px;
   overflow: scroll;
+}
+
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #FFFFFF;
+  transition: box-shadow .25s;
+  border-radius: 10px;
+}
+
+.card .software {
+  background: url('/images/software_portfolio.jpg') no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 44%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%) 
+}
+
+.card .art {
+  background: url('/images/art_portfolio.jpg') no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 44%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%) 
+}
+
+.card .software:hover, .card .art:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 .thumbnail {
