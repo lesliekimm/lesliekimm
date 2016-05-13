@@ -56,8 +56,8 @@ a .home, a:visited .home {
 
 a:hover .home {
   color: #E97B59;
-  font-size: 1.1em;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
 .row {
