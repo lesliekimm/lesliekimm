@@ -1,14 +1,25 @@
 extends layout
 
 block content
-  .main.text-center
-    .row
-      h1.col-sm-offset-3.col-sm-6
-        .main-page lesliekimm
-    .row
-      h6.col-sm-12
-        a.main-page-links(href='/resume') web developer | software developer
-      h6.col-sm-12
-        a.main-page-links(href='/portfolio') artist | painter | designer
-      h6.col-sm-12
-        a.main-page-links(href='/about') fitness enthusiast | wellness
+  .row
+    .col-sm-6.text-center
+      include ./includes/header.jade
+      h1
+        .logo | lesliekimm |
+      h6 #[a(href='/resume') web developer | software developer]
+      h6 #[a(href='/portfolio') artist | painter | designer]
+      h6 #[a(href='/about') fitness enthusiast | wellness]
+    .col-sm-6.right
+
+
+  //- .main.text-center
+  //-   .row
+  //-     h1.col-sm-offset-3.col-sm-6
+  //-       .main-page lesliekimm
+  //-   .row
+  //-     h6.col-sm-12
+  //-       a.main-page-links(href='/resume') web developer | software developer
+  //-     h6.col-sm-12
+  //-       a.main-page-links(href='/portfolio') artist | painter | designer
+  //-     h6.col-sm-12
+  //-       a.main-page-links(href='/about') fitness enthusiast | wellness

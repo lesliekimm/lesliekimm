@@ -1,187 +1,262 @@
-h1 {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.3em/52px; }
-  h1 .main-page {
-    font-size: 80px;
-    line-height: 1.3em/96px;
-    margin-top: 350px;
-    color: white; }
-    @media (max-width: 768px) {
-      h1 .main-page {
-        font-size: 50px; } }
+body, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  color: #444444;
+}
 
-h2 {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 1.3em/39px; }
+h1, h2, h3, h4, h5 {
+  font-family: 'Merriweather', serif;;
+}
 
-h3 {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.3em/26px; }
-  h3.portfolio {
-    margin-top: -3px; }
+h1 .logo {
+  margin-top: 300px;
+  font-size: 2.5em;
+}
 
-h4 {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 1.3em/22px; }
-  h4 .small.date, h4 .project-link {
-    margin-top: 7px; }
+h1 { font-size: 2em; }
 
-h5 {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 1.3em/20px; }
+h2 { font-size: 1.8em; }
+
+h3 { font-size: 1.6em; }
+
+h4 { font-size: 1.4em; }
+
+h5 { font-size: 1.2em; }
 
 h6 {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 1.3em/17px;
-  text-transform: uppercase; }
-  h6.portfolio {
-    margin-top: -10px; }
-  h6.portfolio-smaller {
-    margin-top: -5px; }
+  font-size: 1em;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
 
-body, p {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  background-color: #eceff1;
-  color: #263238; }
-
-a {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  color: #607d8b;
-  text-decoration: none; }
-
-a:active, a:visited {
-  text-decoration: none; }
+a, a:visited {
+  color: #444444;
+}
 
 a:hover {
-  color: #90a4ae;
-  text-decoration: none; }
+  color: #E97B59;
+  text-decoration: none;
+}
 
-.upper {
-  text-transform: uppercase; }
+.row {
+  margin: 0;
+}
 
-/* navbar */
-nav {
-  background-color: black; }
-
-a.brand-logo {
-  color: white;
-  margin-left: 25px; }
-
-a.navbar-link {
-  color: white;
-  text-transform: uppercase; }
-  a.navbar-link:hover {
-    color: #26a69a; }
-
-ul.right {
-  margin-right: 25px; }
-
-/* index page */
-.main {
-  background: url(/images/bg.jpg) no-repeat center center fixed;
-  height: 960px;
+.right {
+  background: url(/images/wires.jpg) no-repeat top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden;
+  min-height: 100%;
+  min-width: auto;
+}
 
-a.main-page-links {
-  color: white;
-  font-size: 13px;
-  line-height: 1.3em/17px;
-  text-transform: uppercase; }
 
-a.main-page-links:hover {
-  color: #26a69a; }
 
-/* resume page */
-.card-resume {
-  padding: 25px;
-  border-radius: 10px; }
 
-.accent-color {
-  color: #26a69a; }
+// $blue-grey-lighten-5: #eceff1;    // background
+// $blue-grey-darken-4: #263238;     // navbar bg, text
+// $blue-grey: #607d8b;              // links
+// $blue-grey-lighten-2: #90a4ae;    // hover
+// $teal-lighten-1: #26a69a;         // accent color
 
-p {
-  background-color: white; }
-  p.resume {
-    margin: 0; }
+// h1
+//   font-family: $merriweather;
+//   font-weight: 700;
+//   font-size: 40px;
+//   line-height: 1.3em/52px;
+//   .main-page
+//     font-size: 80px;
+//     line-height: 1.3em/96px;
+//     margin-top: 350px;
+//     color: white;
+//     @media (max-width: 768px)
+//       font-size: 50px;
 
-a.btn-resume {
-  width: 100%;
-  text-decoration: none;
-  margin-top: 15px;
-  margin-bottom: 25px;
-  border-radius: 10px; }
-  a.btn-resume:hover {
-    color: white; }
+// h2
+//   font-family: $merriweather;
+//   font-weight: 700;
+//   font-size: 30px;
+//   line-height: 1.3em/39px;
 
-.resume-padding {
-  padding-top: 17.1px; }
+// h3
+//   font-family: $merriweather;
+//   font-weight: 700;
+//   font-size: 20px;
+//   line-height: 1.3em/26px;
+//   &.portfolio
+//     margin-top: -3px;
 
-/* portfolio page */
-.rounded-corners {
-  border-radius: 10px; }
+// h4
+//   font-family: $merriweather;
+//   font-weight: 700;
+//   font-size: 17px;
+//   line-height: 1.3em/22px;
+//   .small.date, .project-link
+//     margin-top: 7px;
 
-.img-rounded-corners {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px; }
+// h5
+//   font-family: $merriweather;
+//   font-weight: 700;
+//   font-size: 15px;
+//   line-height: 1.3em/20px;
 
-.img-small {
-  width: 236px;
-  height: 160px;
-  overflow: hidden; }
+// h6
+//   font-family: $source-sans-pro;
+//   font-weight: 400;
+//   font-size: 13px;
+//   line-height: 1.3em/17px;
+//   text-transform: uppercase;
+//   &.portfolio
+//     margin-top: -10px;
+//   &.portfolio-smaller
+//     margin-top: -5px;
 
-.card.large {
-  height: 450px; }
-  .card.large:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+// body, p
+//   font-family: $source-sans-pro;
+//   background-color: $blue-grey-lighten-5;
+//   color: $blue-grey-darken-4;
 
-.portfolio-description {
-  color: #263238; }
-  .portfolio-description:hover {
-    color: #263238; }
+// a
+//   font-family: $source-sans-pro;
+//   color: $blue-grey;
+//   text-decoration: none;
 
-.small-image-size {
-  width: 200px;
-  height: auto;
-  margin-right: 20px;
-  margin-bottom: 20px; }
+// a:active, a:visited
+//   text-decoration: none;
 
-/* about page */
-.large-image-size {
-  width: 400px;
-  height: auto;
-  margin-right: 20px;
-  margin-bottom: 20px; }
+// a:hover
+//   color: $blue-grey-lighten-2;
+//   text-decoration: none;
 
-.card-about {
-  margin-bottom: 35px;
-  padding-bottom: 0px; }
+// .upper
+//   text-transform: uppercase;
 
-/* contact page */
-.btn-contact {
-  width: 100%;
-  text-decoration: none;
-  margin-top: 15px;
-  margin-bottom: 0px;
-  border-radius: 10px; }
-  .btn-contact:hover {
-    color: white; }
+// /* navbar */
+// nav
+//   background-color: rgba(0, 0, 0, 1);
 
-.social-media-images {
-  width: 30px; }
+// a.brand-logo
+//   color: white;
+//   margin-left: 25px;
 
-/*# sourceMappingURL=style.css.map */
+// a.navbar-link
+//   color: white;
+//   text-transform: uppercase;
+//   &:hover
+//     color: $teal-lighten-1;
+
+// ul.right
+//   margin-right: 25px;
+
+// /* index page */
+// .main
+//   background: url(/images/bg.jpg) no-repeat center center fixed;
+//   height: 960px;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+
+// a
+//   &.main-page-links
+//     color: white;
+//     font-size: 13px;
+//     line-height: 1.3em/17px;
+//     text-transform: uppercase;
+//   &.main-page-links:hover
+//     color: $teal-lighten-1;
+
+// /* resume page */
+// .card-resume
+//   padding: 25px;
+//   border-radius: 10px;
+
+// .accent-color
+//   color: $teal-lighten-1;
+
+// p
+//   background-color: white;
+//   &.resume
+//     margin: 0;
+
+// a.btn-resume
+//   width: 100%;
+//   text-decoration: none;
+//   margin-top: 15px;
+//   margin-bottom: 25px;
+//   border-radius: 10px;
+//   &:hover
+//     color: white;
+
+// .resume-padding
+//   padding-top: 17.1px;
+
+// /* portfolio page */
+// .rounded-corners
+//   border-radius: 10px;
+
+// .img-rounded-corners
+//   border-top-left-radius: 10px;
+//   border-top-right-radius: 10px;
+
+// .img-small
+//   width: 236px;
+//   height: 160px;
+//   overflow: hidden;
+
+// .card.large
+//   height: 450px;
+//   &:hover
+//     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+// .portfolio-description
+//   color: $blue-grey-darken-4;
+//   &:hover
+//     color: $blue-grey-darken-4;
+
+// .small-image-size
+//   width: 200px;
+//   height: auto;
+//   margin-right: 20px;
+//   margin-bottom: 20px;
+
+// /* about page */
+// .large-image-size
+//   width: 400px;
+//   height: auto;
+//   margin-right: 20px;
+//   margin-bottom: 20px;
+
+// .card-about
+//   margin-bottom: 35px;
+//   padding-bottom: 0px;
+
+// /* contact page */
+// .btn-contact
+//   width: 100%;
+//   text-decoration: none;
+//   margin-top: 15px;
+//   margin-bottom: 0px;
+//   border-radius: 10px;
+//   &:hover
+//     color: white;
+
+// .social-media-images
+//   width: 30px;
+
+
+
+
+
+
+
+
+
+
+
+
+
