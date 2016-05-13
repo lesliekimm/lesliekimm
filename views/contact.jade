@@ -1,17 +1,18 @@
 extends layout
 
 block content
-  .container
-    h2.text-center contact leslie kimm
-    .card.card-resume.card-about
-      .row
-        .col-sm-12.container-fluid
-          img.pull-left.rounded-corners.large-image-size(src='images/leslie_and_thumper.jpg')
+  .row
+    .col-sm-6.text-center
+      include ./includes/header.jade
+      .col-sm-12
+        .content
+          h2.text-center
+            .title | contact |
+          img.larger-thumbnail(src='images/leslie_and_thumper.jpg')
+          p if you have any feedback, suggestions or concerns, feel free to reach me at leslie@lesliekimm.com
           .row
-            a(href='https://www.linkedin.com/in/lesliekimm', target='_blank')#[img.social-media-images(src='images/social_media/linkedin.png')] 
-            a(href='https://www.facebook.com/lesliekimmartist/', target='_blank')#[img.social-media-images(src='images/social_media/facebook.png')] 
-            a(href='https://twitter.com/lesliekimm', target='_blank')#[img.social-media-images(src='images/social_media/twitter.png')] 
-            a(href='https://www.instagram.com/lesliekimmakes/', target='_blank')#[img.social-media-images(src='images/social_media/instagram.png')]
-            br
-            br
-            p if you have any feedback, suggestions or concerns, feel free to reach me at leslie@lesliekimm.com
+          a(href='https://www.linkedin.com/in/lesliekimm', target='_blank')#[img.social-media-images(src='images/social_media/linkedin.png')] 
+          a(href='https://www.facebook.com/lesliekimmartist/', target='_blank')#[img.social-media-images(src='images/social_media/facebook.png')] 
+          a(href='https://twitter.com/lesliekimm', target='_blank')#[img.social-media-images(src='images/social_media/twitter.png')] 
+          a(href='https://www.instagram.com/lesliekimmakes/', target='_blank')#[img.social-media-images(src='images/social_media/instagram.png')]          
+    .col-sm-6.right
