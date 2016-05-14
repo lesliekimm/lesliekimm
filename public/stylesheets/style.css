@@ -82,6 +82,11 @@ a .btn-primary:hover {
   background-color: #EDB3A2;
 }
 
+a .btn-small {
+  margin-top: 10px;
+  padding: 8px;
+}
+
 p.remove-line-height {
   line-height: 0;
 }
