@@ -49,7 +49,7 @@ h2 .title {
 }
 
 h5 .small {
-  margin-top: 5px;
+  margin: 10 0;
 }
 
 a, a:visited {
@@ -69,6 +69,21 @@ a:hover .home {
   color: #E97B59;
   text-decoration: none;
   letter-spacing: 1px;
+}
+
+a .btn-primary, a .btn-primary:visited {
+  padding: 15px;
+  margin: 0;
+  background-color: #E97B59;
+  border-radius: 3px;
+}
+
+a .btn-primary:hover {
+  background-color: #EDB3A2;
+}
+
+p.remove-line-height {
+  line-height: 0;
 }
 
 .accent-color {

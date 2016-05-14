@@ -2,7 +2,7 @@ extends layout
 
 block content
   .row
-    .col-sm-6.text-center
+    .col-md-6.text-center
       include ./includes/header.jade
       .col-sm-12
         .content
@@ -12,14 +12,11 @@ block content
             .padding
               .row
                 .col-sm-12.text-center
-                  h3 Leslie Kim
-                  h5 Web Developer, Software Developer
-              hr
-              .row
-                .col-sm-12.text-center
-                  p leslie@lesliekimm.com
-                  p
-                    a(href='http://www.lesliekimm.com', target='_blank') lesliekimm.com
+                  h4 Leslie Kim
+                  h6 Web Developer, Software Developer
+                  | leslie@lesliekimm.com
+                  br
+                  a(href='http://www.lesliekimm.com', target='_blank') lesliekimm.com
                   .row
                     a(href='https://github.com/lesliekimm', target='_blank')#[img.social-media-images(src='images/social_media/github.png')] 
                     a(href='https://www.linkedin.com/in/lesliekimm', target='_blank')#[img.social-media-images(src='images/social_media/linkedin.png')] 
@@ -75,85 +72,99 @@ block content
                       h5.accent-color Boolean Forest #[small #[em (Java)]]
                         .small Apr '15 - May '15
                       p Interactive Java applet used as teaching tool to teach children the basics of Boolean Logic
-                  hr  
-              .col-sm-12
-                  h4.text-center Experience
-                .text-left
-                  .row
-                    .col-sm-12
-                      h5.accent-color Engineering Intern at Social Tables #[small #[em (React, JavaScript)]]
-                        .small Jun '15 - Aug '15 | Washington, D.C.
-                      p Used existing API to revamp internal customer service tool
-                      h6 #[a(href='https://www.socialtables.com/', target='_blank') socialtables.com]
-                        
-                      h5.accent-color VP, Digital Media Operations at Laugh Factory #[small #[em (HTML, CSS, PHP)]]
-                        .small Oct '10 - May '12 | Los Angeles, CA
-                      p Managed online content: website, social media, videos, press releases
-                      p Managed digital media partnerships: GoogleTV, Intel, RayV TV, YouTube
-                      p Debugged and fixed ~100 bugs for website and managed outsourced web programmers
-                      p Redesigned newsletter and content to increase click-through rate to website by ~70%
-                      h6 #[a(href='http://www.laughfactory.com/', target='_blank') laughfactory.com]
-              hr
-              .row
-                .col-sm-2.text-right.upper
-                  .resume-padding Volunteer
-                .col-sm-9
-                  h4.accent-color Instructor for Girls Who Code #[small #[em (St. Ignatius Prep School)]]
-                    .small.date Jan '16 - present | San Francisco, CA
-                  p.resume Mentoring 4 groups of girls for Technovation 2016: Girls are building apps using MIT's AppInventor that solve problems in their community to compete to pitch their app at the World Pitch for $10,000 to implement their apps
-                  p Use Codesters curriculum to teach girls to program #[em (Python)]
-                  h6 #[a(href='http://girlswhocode.com/', target='_blank') girlswhocode.com]
-              hr
-              .row
-                .col-sm-2.text-right.upper
-                  .resume-padding Education
-                .col-sm-9
-                  h4.accent-color Make School #[small #[em (Product University)]]
-                    .small.date Sep '15 - present | San Francisco, CA
-                  p Units: iOS dev, web dev, computer science foundations
+                  hr
+              .row  
+                .col-sm-12
+                    h4.text-center Experience
+                  .text-left
+                    .row
+                      .col-sm-12
+                        h5.accent-color Engineering Intern at Social Tables #[small #[em (React, JavaScript)]]
+                          .small Jun '15 - Aug '15 | Washington, D.C.
+                        p Used existing API to revamp internal customer service tool
+                        h6 #[a(href='https://www.socialtables.com/', target='_blank') socialtables.com]
+                    
+                    .col-sm-offset-2.col-sm-8.text-center
+                      hr
 
-                  h4.accent-color Georgetown University #[small #[em (Post Baccalaureate Certificate: 3.67 GPA)]]
-                    .small.date Jan '14 - May '15 | Washington, D.C.
-                  p Classes: advanced programming, data structures, network securities
-
-                  h4.accent-color NYU: Leonard Stern School of Business #[small #[em (B.S. Marketing, Studio Art, Film: 3.5 GPA)]]
-                    .small.date Sep '07 - May '10 | New York, NY
-              hr
+                    .row
+                      .col-sm-12 
+                        h5.accent-color VP, Digital Media Operations at Laugh Factory #[small #[em (HTML, CSS, PHP)]]
+                          .small Oct '10 - May '12 | Los Angeles, CA
+                        | Managed online content: website, social media, videos, press releases
+                        br
+                        | Managed digital media partnerships: GoogleTV, Intel, RayV TV, YouTube
+                        br 
+                        | Debugged and fixed ~100 bugs for website and managed outsourced web programmers
+                        br
+                        | Redesigned newsletter and content to increase click-through rate to website by ~70%
+                        h6 #[a(href='http://www.laughfactory.com/', target='_blank') laughfactory.com]
+                hr
               .row
-                .col-sm-2.text-right.upper Skills
-                .col-sm-2
-                  p.resume Software Dev
-                  p.resume Software Dev Tools
-                  p Design Tools
-                .col-sm-8
-                  p.resume Python, Rails, Ruby, MEAN, JavaScript, Swift, Realm, HTML, CSS, C++, Java, React
-                  p.resume Git, GitHub, Xcode, Eclipse, Android Studio
-                  p Balsamiq, Sketch, Photoshop, InDesign, Illustrator
-              hr
+                .col-sm-12
+                    h4.text-center Volunteer
+                  .text-left
+                    .row
+                      .col-sm-12
+                        h5.accent-color Instructor for Girls Who Code #[small #[em (St. Ignatius Prep School)]]
+                          .small Jan '16 - present | San Francisco, CA
+                        | Mentoring 4 groups of girls for Technovation 2016: Girls are building apps using MIT's AppInventor that solve problems in their community to compete to pitch their app at the World Pitch for $10,000 to implement their apps
+                        br
+                        | Use Codesters curriculum to teach girls to program #[em (Python)]
+                        h6 #[a(href='http://girlswhocode.com/', target='_blank') girlswhocode.com]
+                hr
               .row
-                .col-sm-2.text-right.upper Languages
-                .col-sm-2
-                  p.resume English
-                  p.resume Korean
-                  p Spanish
-                .col-sm-8
-                  p.resume Native speaker
-                  p.resume Conversational
-                  p Beginner
-              hr
+                .col-sm-12
+                    h4.text-center Education
+                  .text-left
+                    .row
+                      .col-sm-12
+                        h5.accent-color Make School #[small #[em (Product University)]]
+                          .small Sep '15 - present | San Francisco, CA
+                        p Units: iOS dev, web dev, computer science foundations
+                    .row
+                      .col-sm-12
+                        h5.accent-color Georgetown University #[small #[em (Post Baccalaureate Certificate: 3.67 GPA)]]
+                          .small Jan '14 - May '15 | Washington, D.C.
+                        p Classes: advanced programming, data structures, network securities
+                    .row
+                      .col-sm-12
+                        h5.accent-color NYU: Leonard Stern School of Business #[small #[em (B.S. Marketing, Studio Art, Film: 3.5 GPA)]]
+                          .small Sep '07 - May '10 | New York, NY
+                hr
               .row
-                .col-sm-2.text-right.upper Interests
-                .col-sm-2
-                  p.resume Painting | Fine Arts
-                  p.resume Fitness | Health
-                  p.resume Education
-                  p Volunteering
-                .col-sm-8
-                  p.resume Acrylics, oil, watercolor, multimedia (donation & commission based)
-                  p.resume Lagree Method, running, yoga, tennis, hiking
-                  p.resume Girls Who Code, art instructor (ages 3 - 30), STEM & SATS private instructor
-                  p Girls Who Code, St. Anthony's Foundation Tech Lab, animal rescue organizations
-            .row.text-center
-              .col-sm-12
-                a.btn-large.wave-effect.waves-light.btn-resume(href='http://lesliekimm.github.io/KimLeslieResume.pdf', target='_blank') Download My Resume
-    .col-sm-6.right
+                .col-sm-12
+                    h4.text-center Skills
+                  .text-left
+                    .row
+                      .col-sm-12
+                        p #[strong Software Dev:] Python, Rails, Ruby, MEAN, JavaScript, Swift, Realm, HTML, CSS, C++, Java, React
+                        p #[strong Software Dev Tools:] Git, GitHub, Xcode, Eclipse, Android Studio
+                        p #[strong Design Tools:] Balsamiq, Sketch, Photoshop, InDesign, Illustrator
+                hr
+              .row
+                .col-sm-12
+                    h4.text-center Languages
+                  .text-left
+                    .row
+                      .col-sm-12
+                        p #[strong English:] Native speaker
+                        p #[strong Korean:] Conversational
+                        p #[strong Spanish:] Beginner
+                hr
+              .row
+                .col-sm-12
+                    h4.text-center Interests
+                  .text-left
+                    .row
+                      .col-sm-12
+                        p #[strong Painting | Fine Arts:] Acrylics, oil, watercolor, multimedia (donation & commission based)
+                        p #[strong Fitness | Health:] Lagree Method, running, yoga, tennis, hiking
+                        p #[strong Education:] Girls Who Code, art instructor (ages 3 - 30), STEM & SATS private instructor
+                        p #[strong Volunteering:] Girls Who Code, St. Anthony's Foundation Tech Lab, animal rescue organizations
+          br
+          .row.text-center
+            .col-sm-12
+              a(href='http://lesliekimm.github.io/KimLeslieResume.pdf', target='_blank')
+                h6.btn-primary Download My Resume
+    .col-sm-6.right.hidden-sm.hidden-xs
