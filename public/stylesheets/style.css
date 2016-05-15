@@ -90,6 +90,10 @@ a .base-color:hover, a .base-color:active {
   max-height: 100%;
 }
 
+.card.medium {
+  height: 350px;
+}
+
 .card .card-image .card-title {
   color: #FFFFFF;
   position: absolute;
@@ -99,6 +103,30 @@ a .base-color:hover, a .base-color:active {
 }
 
 .card .card-image .card-title { color: #E97B59; }
+
+.card .card-content .card-title {
+  color: #444444;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  line-height: 1.3em;
+  font-size: 1.6em;
+}
+
+.card-reveal {
+  left: 0;
+}
+
+.card-reveal .card-title {
+  color: #E97B59;;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  line-height: 1.3em;
+  font-size: 1.6em;
+  }
+
+i.right {
+  margin-left: 0;
+}
 
 /* NAV BAR */
 nav { background-color: #FFFFFF; }

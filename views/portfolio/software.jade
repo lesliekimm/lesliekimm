@@ -6,55 +6,125 @@ block content
       include ../includes/header.jade
       .content
         h2.text-center.accent-color.letter-spacing software portfolio
-        h4 coming soon...
-    .col-sm-6.right-panel.hidden-sm.hidden-xs  
-
-  //- .container
-  //-   h2.text-center software portfolio
-  //-   .card.card-resume.card-about
-  //-     .row
-  //-       .col-sm-12.container-fluid
-  //-         a(href='https://github.com/cmaher92/connectall', target='_blank')#[img.pull-left.rounded-corners.small-image-size(src='../images/software/connectall.png')]
-  //-         h3.accent-color.portfolio connectall #[small stack: #[em ruby on rails]]
-  //-         h6.small.portfolio status: #[em currently in development]
-  //-         p in collaboration with the white house, a web tool for the obama administration's connectall initiative to provide all americans the necessary skills to help close the digital divide. collect all is an open source project that provides an online platform for user curated tutorials. each tutorial will cover one simple task, such as creating an email account. it will ship with a beginner suite to help users become comfortable with computer hardware as well as internet basics. tech experts can create tutorials and developers will be able to contribute to the open source project.
-  //-         a(href='https://github.com/cmaher92/connectall', target='_blank') github repo | #[a(href='https://www.whitehouse.gov/the-press-office/2016/03/09/fact-sheet-president-obama-announces-connectall-initiative', target='_blank') press release]
-  //-   .card.card-resume.card-about
-  //-     .row
-  //-       .col-sm-12.container-fluid
-  //-         a(href='https://meancourseboard.herokuapp.com/', target='_blank')#[img.pull-left.rounded-corners.small-image-size(src='../images/software/courseboard.png')]
-  //-         h3.accent-color.portfolio courseboard #[small stack: #[em mean, javascript]]
-  //-         h6.small.portfolio status: #[em currently in development, live for user testing]
-  //-         p a web app for organizations to allow users to create and enroll in courses, post assignments and announcements to the course page. instructors create courses with a description and number of hours the course will meet per week. instructors can post assignments to their course page and all instructutors and students will be able to view them. students can enroll in classes and everyone can post annoucements to course they are enrolled in. the student page displays all assignments and annoucements from all courses the student is enrolled in.
-  //-         a(href='https://meancourseboard.herokuapp.com/', target='_blank') live site | #[a(href='https://github.com/ajbraus/courseboard', target='_blank') github repo]
-  //-   .card.card-resume.card-about
-  //-     .row
-  //-       .col-sm-12.container-fluid
-  //-         a(href='https://lesliekimm.herokuapp.com/', target='_blank')#[img.pull-left.rounded-corners.small-image-size(src='../images/software/portfolio_website.png')]
-  //-         h3.accent-color.portfolio portfolio website #[small stack: #[em node, express, javascript, materialize, sass]]
-  //-         h6.small.portfolio status: #[em live]
-  //-         h6.small.portfolio-smaller backlog: #[em redesign and use angular and mongo for blogs posts and creating new projects in portfolios]
-  //-         p a work-in-progress website built from scratch to display both software and art portfolios. currently using #[a(href='http://www.lesliekimm.com', target='_blank') wordpress] but would like more control over my cms and layout. will be incorporating angular and mongo for blog posts and new items for portfolios.
-  //-         a(href='https://lesliekimm.herokuapp.com/', target='_blank') live site | #[a(href='http://lesliekimm.github.io/index.html', target='_blank') version 1] | #[a(href='http://www.lesliekimm.com', target='_blank') wordpress] | #[a(href='https://github.com/lesliekimm/lesliekimm', target='_blank') github repo]
-  //-   .card.card-resume.card-about
-  //-     .row
-  //-       .col-sm-12.container-fluid
-  //-         a(href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1084872902&mt=8', target='_blank')#[img.pull-left.rounded-corners.small-image-size(src='../images/software/talent_tracker.png')]
-  //-         h3.accent-color.portfolio talent tracker #[small stack: #[em swift, realm]]
-  //-         h6.small.portfolio status: #[em v1.1 live on app store]
-  //-         p ios mobile app that helps talent bookers keep track of confirmed talent for events. talent tracker provides a simple clean interface for event planners to create events and select their lineup from a contact book in the app. users will be able to load the contacts they want from their mobile devices into their app contacts. when talent has confirmed to appear, user can toggle whether or not talent is confirm
-  //-         a(href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1084872902&mt=8', target='_blank') download in the app store
-  //-   .card.card-resume.card-about
-  //-     .row
-  //-       .col-sm-12.container-fluid
-  //-         img.pull-left.rounded-corners.small-image-size(src='../images/software/boolean_logic.jpg')
-  //-         h3.accent-color.portfolio boolean forest #[small stack: #[em java]]
-  //-         h6.small.portfolio status: #[em completed georgetown final advanced programming product, not hosted live]
-  //-         p interactive java applet used as teaching tool to teach children the basics of boolean logic. students meet owls alice and bob, and learn boolean forest concepts to get the children owls through the boolean logic forest. after learning a concept, students answer a series of questions to enforce the concept. the capstone level is a drag and drop cumulative level where students are given more complex boolean logic statments and will dress up the owl on the screen to answer the question.
-  //-   .card.card-resume.card-about
-  //-     .row
-  //-       .col-sm-12.container-fluid
-  //-         img.pull-left.rounded-corners.small-image-size(src='../images/software/lesliekimm.jpg')
-  //-         h3.accent-color.portfolio lesliekimm #[small stack: #[em java, xml]]
-  //-         h6.small.portfolio status: #[em completed georgetown advanced programming android product, not live on google play]
-  //-         p android mobile app used to sell paintings with drag and drop implementation. this is a simple store that can be used to sell anything and was built to learn how to use android studio and build my first mobile app.
+        .row
+          .col-sm-6
+            .card.medium.grey-scale
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='../images/software/connectall.png')
+              .card-content
+                span.card-title.activator
+                  | connectall
+                  i.material-icons.right more_vert
+                p
+                  h6
+                    a(href='https://github.com/cmaher92/connectall', target='_blank') githup repo
+                    br
+                    a(href='http://www.lesliekimm.com/wp-content/uploads/2016/05/connectall_slide_deck.pdf', target='_blank') demo night pitch deck
+                    br
+                    a(href='https://www.whitehouse.gov/the-press-office/2016/03/09/fact-sheet-president-obama-announces-connectall-initiative', target='_blank') press release
+              .card-reveal
+                span.card-title
+                  | connectall
+                  i.material-icons.right close
+                .text-left
+                  h5.small stack: ruby on rails
+                  h5.small March 2016 - present
+                  p #[h6 description:] in collaboration with the white house, a web tool for the obama administration's connectall initiative to provide all americans the necessary skills to help close the digital divide. collect all is an open source project that provides an online platform for user curated tutorials. each tutorial will cover one simple task, such as creating an email account. it will ship with a beginner suite to help users become comfortable with computer hardware as well as internet basics. tech experts can create tutorials and developers will be able to contribute to the open source project.
+          .col-sm-6
+            .card.medium.grey-scale
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='../images/software/courseboard.png')
+              .card-content
+                span.card-title.activator
+                  | courseboard
+                  i.material-icons.right more_vert
+                p
+                  h6
+                    a(href='https://meancourseboard.herokuapp.com/', target='_blank') live site
+                    br
+                    a(href='https://github.com/ajbraus/courseboard', target='_blank') github repo
+              .card-reveal
+                span.card-title
+                  | courseboard
+                  i.material-icons.right close
+                .text-left
+                  h5.small stack: mean stack
+                  h5.small February 16 - present
+                  p #[h6 description:] a web app for organizations to allow users to create and enroll in courses, post assignments and announcements to the course page. instructors create courses with a description and number of hours the course will meet per week. instructors can post assignments to their course page and all instructutors and students will be able to view them. students can enroll in classes and everyone can post annoucements to course they are enrolled in. the student page displays all assignments and annoucements from all courses the student is enrolled in.
+        .row
+          .col-sm-6
+            .card.medium.grey-scale
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='../images/software/portfolio_website.png')
+              .card-content
+                span.card-title.activator
+                  | portfolio website
+                  i.material-icons.right more_vert
+                p
+                  h6
+                    a(href='https://lesliekimm.herokuapp.com/', target='_blank') live site
+                    br
+                    a(href='http://lesliekimm.github.io/index.html', target='_blank') version 1
+                    br
+                    a(href='https://github.com/lesliekimm/lesliekimm', target='_blank') github repo
+              .card-reveal
+                span.card-title
+                  | portfolio website
+                  i.material-icons.right close
+                .text-left
+                  h5.small stack: mean stack, javascript, bootstrap, materialize, sass
+                  h5.small January 2016 - present
+                  p #[h6 description:] a work-in-progress website built from scratch to display both software and art portfolios. currently using wordpress but would like more control over my cms and layout. will be incorporating angular and mongo for blog posts and new items for portfolios.
+          .col-sm-6
+            .card.medium.grey-scale
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='../images/software/talent_tracker.png')
+              .card-content
+                span.card-title.activator
+                  | talent tracker
+                  i.material-icons.right more_vert
+                p
+                  h6
+                    a(href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1084872902&mt=8', target='_blank') download in the app store
+              .card-reveal
+                span.card-title
+                  | talent tracker
+                  i.material-icons.right close
+                .text-left
+                  h5.small stack: swift, realm
+                  h5.small October 2015 - March 2016
+                  p #[h6 description:] ios mobile app that helps talent bookers keep track of confirmed talent for events. talent tracker provides a simple clean interface for event planners to create events and select their lineup from a contact book in the app. users will be able to load the contacts they want from their mobile devices into their app contacts. when talent has confirmed to appear, user can toggle whether or not talent is confirmed.
+        .row
+          .col-sm-6
+            .card.medium.grey-scale
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='../images/software/boolean_logic.jpg')
+              .card-content
+                span.card-title.activator
+                  | boolean forest
+                  i.material-icons.right more_vert
+              .card-reveal
+                span.card-title
+                  | boolean forest
+                  i.material-icons.right close
+                .text-left
+                  h5.small stack: java
+                  h5.small April 2015 - May 2015
+                  p #[h6 description:] interactive java applet used as teaching tool to teach children the basics of boolean logic. students meet owls alice and bob, and learn boolean forest concepts to get the children owls through the boolean logic forest. after learning a concept, students answer a series of questions to enforce the concept. the capstone level is a drag and drop cumulative level where students are given more complex boolean logic statments and will dress up the owl on the screen to answer the question.
+          .col-sm-6
+            .card.medium.grey-scale
+              .card-image.waves-effect.waves-block.waves-light
+                img.activator(src='../images/software/lesliekimm.jpg')
+              .card-content
+                span.card-title.activator
+                  | lesliekimm
+                  i.material-icons.right more_vert
+              .card-reveal
+                span.card-title
+                  | lesliekimm
+                  i.material-icons.right close
+                .text-left
+                  h5.small stack: java, xml
+                  h5.small March 2015 - April 2015
+                  p #[h6 description:] android mobile app used to sell paintings with drag and drop implementation. this is a simple store that can be used to sell anything and was built to learn how to use android studio and build my first mobile app.
+    .col-sm-6.right-panel.hidden-sm.hidden-xs
