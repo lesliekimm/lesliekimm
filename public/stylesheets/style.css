@@ -133,12 +133,7 @@ nav ul a:hover {
   font-size: 2.5em;
 }
 
-@media (max-width: 768px) {
-  .logo {
-    font-size: 40px;
-  }
-}
-
+/* ABOUT PAGE */
 .about-image {
   max-width: 300px;
   margin-right: 20px;
@@ -159,4 +154,14 @@ nav ul a:hover {
 .grey-scale:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 40px;
+  }
+  .about-image {
+    max-width: 100%;
+  }
 }
