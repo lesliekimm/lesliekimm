@@ -140,6 +140,11 @@ nav ul a:hover {
   margin-bottom: 5px;
 }
 
+/* CONTACT PAGE */
+.contact-image {
+  width: 500px;
+}
+
 /* MISCELLANEOUS */
 .social-media-images {
   width: 40px;
@@ -161,7 +166,12 @@ nav ul a:hover {
   .logo {
     font-size: 40px;
   }
+
   .about-image {
+    max-width: 100%;
+  }
+
+  .contact-image {
     max-width: 100%;
   }
 }
