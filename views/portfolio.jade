@@ -4,22 +4,41 @@ block content
   .row
     .col-md-6.text-center
       include ./includes/header.jade
-      .col-sm-12
-        .content
-          h2.text-center
-            .title portfolios
-          .row
-            .col-sm-offset-1.col-sm-10
-              a(href='/portfolio/software')
-                .card
-                  .software
-                    h1
-                      .portfolio-title software
-          .row
-            .col-sm-offset-1.col-sm-10
-              a(href='/portfolio/art')
-                .card
-                  .art
-                    h1
-                      .portfolio-title artwork
-    .col-sm-6.right.hidden-sm.hidden-xs
+      .content
+        h2.text-center.accent-color.letter-spacing portfolio 
+        a(href='/portfolio/software')
+          .card.small.remove-padding.grey-scale
+            .card-image
+              img(src='/images/software_portfolio.jpg')
+              .card-title
+                h3 software
+        a(href='/portfolio/art')
+          .card.small.remove-padding.grey-scale
+            .card-image
+              img(src='/images/art_portfolio.jpg')
+              .card-title
+                h3 artwork
+
+          //- .card-content
+          //-   p
+          //-     | I am a very simple card. I am good at containing small bits of information.
+          //-     | I am convenient because I require little markup to use effectively.
+          //- .card-action
+          //-   a(href='#') This is a link
+
+
+          //- .row
+          //-   .col-sm-offset-1.col-sm-10
+          //-     a(href='/portfolio/software')
+          //-       .card
+          //-         .software
+          //-           h1
+          //-             .portfolio-title software
+          //- .row
+          //-   .col-sm-offset-1.col-sm-10
+          //-     a(href='/portfolio/art')
+          //-       .card
+          //-         .art
+          //-           h1
+          //-             .portfolio-title artwork
+    .col-sm-6.right-panel.hidden-sm.hidden-xs

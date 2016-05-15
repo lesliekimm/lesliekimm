@@ -1,4 +1,3 @@
-/* OVERALL STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -30,13 +29,7 @@ h6 {
   line-height: 1.3em;
 }
 
-a, a:visited, a:link, a:active {
-  color: #E97B59;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #EDB3A2;
+a:hover, a:visited, a:link, a:active {
   text-decoration: none;
 }
 
@@ -51,81 +44,42 @@ a:hover {
   min-width: auto;
 }
 
-.accent-color { color: #E97B59; }
-
-a .base-color { color: #444444; }
-
-a .base-color:hover, a .base-color:active {
-  color: #E97B59;
-  letter-spacing: 1px;
-  text-decoration: none;
+.col-md-6 {
+  padding: 0;
 }
 
-.letter-spacing { letter-spacing: 5px; }
+.row {
+  margin: 0;
+}
+
+.accent-color {
+  color: #E97B59;
+}
 
 .content {
   position: top absolute;
-  padding: 0 30 30 30;
+  padding: 30 50 30 30;
   top: 20px;
-  height: 90vh;
+  height: 80vh;
   overflow: scroll;
 }
 
-/* OVERRIDE BOOTSTRAP */
-.col-md-6 { padding: 0; }
-
-.row { margin: 0; }
-
-/* OVERRIDE MATERIALIZE */
-/* CARD */
-.card { padding: 10 30; }
-
-.remove-padding { padding: 0; }
-
-.card.small {
-  height: 150px;
-}
-
-.card.small .card-image { 
-  max-height: 100%;
-}
-
-.card .card-image .card-title {
-  color: #FFFFFF;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-}
-
-.card .card-image .card-title { color: #E97B59; }
-
 /* NAV BAR */
-nav { background-color: #FFFFFF; }
+nav {
+  background-color: #FFFFFF;
+}
 
-nav ul a, nav ul a:active, nav ul a:visited,
-nav ul a:link {
+nav ul a {
   padding: 15px;
   color: #444444;
 }
 
-nav ul a:hover {
+nav ul a:hover, nav ul a:active, h6 a:hover, h6 a:active {
   background-color: #FFFFFF;
   color: #E97B59;
   letter-spacing: 1px;
 }
 
-/* BUTTONS */
-.btn, .btn-large { background-color: #E97B59; }
-
-.btn:hover, .btn-large:hover {
-  background-color: #EDB3A2;
-  color: #FFFFFF;
-}
-
-.white-text { color: #FFFFFF; }
-
-/* PAGE SPECIFIC */
 /* INDEX PAGE */
 .logo {
   margin-top: 300px;
@@ -133,26 +87,8 @@ nav ul a:hover {
   font-size: 2.5em;
 }
 
-.about-image {
-  max-width: 300px;
-  margin-right: 20px;
-  margin-bottom: 5px;
-}
-
-/* MISCELLANEOUS */
-.social-media-images {
-  width: 40px;
-  margin: 10 5;
-}
-
-.grey-scale {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%) 
-}
-
-.grey-scale:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
+h6 a {
+  color: #444444;
 }
 
 

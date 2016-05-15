@@ -17,6 +17,11 @@ router.get('/portfolio', function(req, res, next) {
 });
 
 /* GET about page. */
+router.get('/blog', function(req, res, next) {
+  res.render('index');
+});
+
+/* GET about page. */
 router.get('/about', function(req, res, next) {
   res.render('about', { title: '| about |' });
 });

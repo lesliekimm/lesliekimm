@@ -1,21 +1,9 @@
-.row
-  .col-sm-offset-1.col-sm-2.text-center
-    h6
-      a(href='/')
-        .home home
-  .col-sm-2.text-center
-    h6
-      a(href='/resume')
-        .home resume
-  .col-sm-2.text-center
-    h6
-      a(href='/portfolio')
-        .home portfolio
-  .col-sm-2.text-center
-    h6
-      a(href='/about')
-        .home about
-  .col-sm-2.text-center
-    h6
-      a(href='/contact')
-        .home contact
+nav
+  .nav-wrapper
+    ul.nav-mobile.right.hide-on-small-only
+      li #[h6#[a(href='/') home]]
+      li #[h6#[a(href='/resume') resume]]
+      li #[h6#[a(href='/portfolio') portfolio]]
+      li #[h6#[a(href='/blog') blog]]
+      li #[h6#[a(href='/about') about]]
+      li #[h6#[a(href='/contact') contact]]

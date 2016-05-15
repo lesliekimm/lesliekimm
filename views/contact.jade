@@ -4,15 +4,14 @@ block content
   .row
     .col-md-6.text-center
       include ./includes/header.jade
-      .col-sm-12
-        .content
-          h2.text-center
-            .title contact
+      .content
+        h2.text-center.accent-color.letter-spacing contact     
+        .card
           img.larger-thumbnail(src='images/leslie_and_thumper.jpg')
           p if you have any feedback, suggestions or concerns, feel free to reach me at leslie@lesliekimm.com
           .row
-            a(href='https://www.linkedin.com/in/lesliekimm', target='_blank')#[img.social-media-images(src='images/social_media/linkedin.png')] 
-            a(href='https://www.facebook.com/lesliekimmartist/', target='_blank')#[img.social-media-images(src='images/social_media/facebook.png')] 
-            a(href='https://twitter.com/lesliekimm', target='_blank')#[img.social-media-images(src='images/social_media/twitter.png')] 
-            a(href='https://www.instagram.com/lesliekimmakes/', target='_blank')#[img.social-media-images(src='images/social_media/instagram.png')]
-    .col-sm-6.right.hidden-sm.hidden-xs
+            a(href='https://www.linkedin.com/in/lesliekimm', target='_blank')#[img.social-media-images.grey-scale(src='images/social_media/linkedin.png')] 
+            a(href='https://www.facebook.com/lesliekimmartist/', target='_blank')#[img.social-media-images.grey-scale(src='images/social_media/facebook.png')] 
+            a(href='https://twitter.com/lesliekimm', target='_blank')#[img.social-media-images.grey-scale(src='images/social_media/twitter.png')] 
+            a(href='https://www.instagram.com/lesliekimmakes/', target='_blank')#[img.social-media-images.grey-scale(src='images/social_media/instagram.png')]
+    .col-sm-6.right-panel.hidden-sm.hidden-xs
